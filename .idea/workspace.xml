@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2c241f0-59ff-4709-8d84-aa9cc837fe19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LayananSPBU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PengisianPertalite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PengisianPertamax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CetakStruk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CetakStruk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Diskon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Diskon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayananSPBU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PengisianDexlite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PengisianPertalite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PengisianPertamax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PengisianSolar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/01-transaksi-pertalite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/02-transaksi-pertamax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/03-transaksi-solar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/04-transaksi-dexlite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/05-transaksi-gagal.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Lmom5ef1Xj4YGpoA54nlfCzncF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fida aulia/Downloads/H1D025012_FidaAuliaAfifah_ShiftF_ShiftH-I_Responsi-PBO&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fida aulia\Downloads\H1D025012_FidaAuliaAfifah_ShiftF_ShiftH-I_Responsi-PBO\src" />
+      <recent name="C:\Users\fida aulia\Downloads\H1D025012_FidaAuliaAfifah_ShiftF_ShiftH-I_Responsi-PBO" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2c241f0-59ff-4709-8d84-aa9cc837fe19" name="Changes" comment="" />
+      <created>1794068760040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794068760040</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

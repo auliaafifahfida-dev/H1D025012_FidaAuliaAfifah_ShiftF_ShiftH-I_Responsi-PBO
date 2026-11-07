@@ -1,99 +1,68 @@
 # Sistem Transaksi SPBU 
-
 - Nama: Fida Aulia Afifah
-- NIM: H1D0250112
+- NIM: H1D025012
 - Shift Awal: F
 - Shift Baru: H-I 
-- Digit terakhir NIM: 2
 - Tema: SPBU
 
-## Deskripsi Program
+## Aplikasi Pengujian (Run Environment)
+Untuk memastikan portabilitas dan validasi kode program secara menyeluruh, pengujian eksekusi sistem SPBU ini dilakukan pada 3 aplikasi berbeda:
+1. **IntelliJ IDEA**
+2. **Visual Studio Code (VS Code)**
+3. **Command Prompt / Terminal (CMD)**
 
-Sistem Transaksi SPBU merupakan program berbasis Java yang dibuat untuk memenuhi tugas Responsi Akhir Praktikum Pemrograman Berorientasi Objek.
+## Fungsi Setiap File
+- **Main.java** : File eksekusi utama untuk menguji alur dan skenario transaksi SPBU.
+- **LayananSPBU.java** : Superclass berbentuk abstract class yang menampung atribut dasar serta aturan transaksi.
+- **PengisianPertalite.java** : Subclass pengisian Pertalite yang sudah dilengkapi fitur hitung diskon.
+- **PengisianPertamax.java** : Subclass khusus untuk mengolah transaksi pengisian Pertamax.
+- **Diskon.java** : Interface penentu aturan kalkulasi diskon belanja.
+- **CetakStruk.java** : Interface untuk memformat dan menampilkan cetakan struk transaksi.
 
-Program ini mensimulasikan proses transaksi pengisian bahan bakar pada SPBU dengan empat jenis bahan bakar, yaitu Pertalite, Pertamax, Solar, dan Dexlite.
+### File Tambahan
+- **screenshots/** : Folder tempat menyimpan dokumen gambar bukti keluaran (output) program.
+- **README.md** : Berkas panduan dan dokumentasi utama repositori.
 
-Setiap jenis bahan bakar memiliki karakteristik, harga, serta batas pengisian yang berbeda. Program dapat melakukan validasi jumlah pengisian, menghitung total pembayaran, menerapkan diskon sesuai ketentuan, serta menampilkan informasi transaksi dan struk pembayaran.
+## Petunjuk Menjalankan Program di Terminal
+Buka Terminal/Command Prompt pada folder ini, lalu jalankan 2 perintah berikut:
 
-Program ini dikembangkan dengan menerapkan berbagai konsep Pemrograman Berorientasi Objek (PBO) sesuai dengan ketentuan penugasan.
+1. **Kompilasi seluruh file Java:**
+   javac src/*.java
 
-## Daftar Jenis Bahan Bakar
+2. **Jalankan program utama:**
+   java -cp src Main
 
-Program ini menyediakan empat jenis bahan bakar, yaitu:
+## Bukti Tampilan Output (Screenshots)
 
-- Pertalite – memiliki harga dan batas maksimal pengisian tersendiri.
-- Pertamax – memiliki harga dan batas maksimal pengisian tersendiri.
-- Solar – memiliki harga dan batas maksimal pengisian tersendiri.
-- Dexlite – memiliki harga dan batas maksimal pengisian tersendiri.
+### 1. Pengujian via IntelliJ IDEA
 
-Setiap jenis bahan bakar memiliki ketentuan harga, batas pengisian, dan perhitungan transaksi yang disesuaikan dengan program.
+#### Transaksi 1: Pengisian Pertalite (Valid & Diskon)
+![IntelliJ Transaksi 1](screenshots/intellij_transaksi1_pertalite.png)
 
-## Struktur File
+#### Transaksi 2: Pengisian Pertamax (Valid Tanpa Diskon)
+![IntelliJ Transaksi 2](screenshots/intellij_transaksi2_pertamax.png)
 
-- Main.java : Digunakan untuk menjalankan program dan menguji skenario transaksi.
-- LayananSPBU.java : Merupakan abstract class yang menjadi superclass bagi class pengisian BBM.
-- PengisianPertalite.java : Menangani proses transaksi pengisian Pertalite.
-- PengisianPertamax.java : Menangani proses transaksi pengisian Pertamax.
-- PengisianSolar.java : Menangani proses transaksi pengisian Solar.
-- PengisianDexlite.java : Menangani proses transaksi pengisian Dexlite.
-- Diskon.java : Interface yang digunakan untuk mendefinisikan perilaku pemberian diskon,
-- CetakStruk.java : Interface yang digunakan untuk mendefinisikan perilaku percetakan struk transaksi.
+#### Transaksi 3: Pengisian Tidak Valid (Uji Logika If/Else Gagal)
+![IntelliJ Transaksi 3](screenshots/intellij_transaksi3_gagal.png)
 
-## Penerapan 10 Persyaratan PBO
+### 2. Pengujian via Visual Studio Code (VS Code)
 
-Dalam program transaksi SPBU ini, terdapat beberapa konsep pemrograman berorientasi objek yang diterapkan, yaitu:
+#### Transaksi 1: Pengisian Pertalite (Valid & Diskon)
+![VS Code Transaksi 1](screenshots/vscode_transaksi1_pertalite.png)
 
-1. State dan Behavior 
-   Menggunakan atribut untuk menyimpan data transaksi serta method untuk menjalankan proses transaksi.
+#### Transaksi 2: Pengisian Pertamax (Valid Tanpa Diskon)
+![VS Code Transaksi 2](screenshots/vscode_transaksi2_pertamax.png)
 
-2. Immutability
-   Menggunakan `public static final` sebagai konstanta dan `private final` pada atribut yang nilainya tidak dapat diubah.
+#### Transaksi 3: Pengisian Tidak Valid (Uji Logika If/Else Gagal)
+![VS Code Transaksi 3](screenshots/vscode_transaksi3_gagal.png)
 
-3. Enkapsulasi dan Overloading
-   Menggunakan atribut `private`, getter, setter, keyword `this`, serta beberapa konstruktor dengan parameter berbeda.
+### 3. Pengujian via Command Prompt (CMD)
 
-4. Inheritance 
-   Program menggunakan `LayananSPBU` sebagai superclass yang diwariskan oleh class `PengisianPertalite`, `PengisianPertamax`, `PengisianSolar`, dan `PengisianDexlite` melalui keyword `extends`.
+#### Transaksi 1: Pengisian Pertalite (Valid & Diskon)
+![CMD Transaksi 1](screenshots/cmd_transaksi1_pertalite.png)
 
-5. Super Chaining  
-   Menggunakan `super()` untuk memanggil konstruktor superclass dan `super.namaMethod()` untuk memanggil method dari superclass.
+#### Transaksi 2: Pengisian Pertamax (Valid Tanpa Diskon)
+![CMD Transaksi 2](screenshots/cmd_transaksi2_pertamax.png)
 
-6. Method Overriding 
-   Menggunakan `@Override` pada subclass untuk menyesuaikan implementasi method dari superclass.
-
-7. Abstract Class
-   Menggunakan `LayananSPBU` sebagai abstract class yang memiliki abstract method `prosesTransaksi()`.
-
-8. Logika State Percabangan
-   Menggunakan percabangan `if/else` untuk memeriksa jumlah liter dan menentukan status transaksi.
-
-9. Polimorfisme Interface 
-   Memanggil method objek melalui variabel bertipe interface, seperti `Diskon` dan `CetakStruk` di dalam `Main.java`.
-
-10. Multiple Interface
-    Menggunakan dua interface sekaligus pada subclass tertentu, yaitu `Diskon` dan `CetakStruk`.
-
-   
-## Dokumentasi Output Progam
-
-Berikut merupakan dokumentasi hasil output program Sistem Transaksi SPBU yang dijalankan melalui terminal:
-
-1. Transaksi Pertalite
-   Screenshot berikut menampilkan hasil transaksi pengisian BBM Pertalite beserta informasi pembayaran dan struk transaksi. 
-   ![Transaksi Pertalite](screenshots/01-transaksi-pertalite.png)
-
-2. Transaksi Pertamax
-   Screenshot berikut menampilkan hasil transaksi pengisian BBM Pertamax beserta informasi pembayaran dan struk transaksi.
-   ![Transaksi Pertamax](screenshots/02-transaksi-pertamax.png)
-
-3. Transaksi Solar 
-    Screenshot berikut menampilkan hasil transaksi pengisian BBM Solar beserta informasi pembayaran dan struk transaksi.
-    ![Transaksi Solar](screenshots/03-transaksi-solar.png)
-
-4. Transaksi Dexlite
-    Screenshot berikut menampilkan hasil transaksi pengisian BBM Dexlite beserta informasi pembayaran dan struk transaksi.
-    ![Transaksi Dexlite](screenshots/04-transaksi-dexlite.png)
-
-5. Transaksi Gagal
-    Screenshot berikut menampilkan hasil transaksi yang gagal karena jumlah pengisian melebihi batas maksimal yang telah ditentukan. 
-    ![Transaksi Gagal](screenshots/05-transaksi-gagal.png)
+#### Transaksi 3: Pengisian Tidak Valid (Uji Logika If/Else Gagal)
+![CMD Transaksi 3](screenshots/cmd_transaksi3_gagal.png)
